@@ -1,0 +1,59 @@
+.grid {
+  @extend %container;
+}
+
+.grid__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+
+  .grid__figcaption {
+    padding: 20px 24px;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+  }
+
+  .grid__image {
+    position: relative;
+    overflow: hidden;
+  }
+
+}
+
+.grid__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+
+  .grid__image:hover & {
+    transform: translateY(0);
+  }
+
+  &>p {
+    color: $white;
+    padding: 49px 45px 49px 24px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+}
+
+.grid__project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: $black;
+}
+
+.grid__project-type {
+  font-size: 16px;
+  line-height: 1.875;
+}
