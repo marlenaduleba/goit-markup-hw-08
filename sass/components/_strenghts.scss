@@ -8,15 +8,14 @@
 
 .strenghts__list {
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  height: 251px;
+ flex-direction: column;
+ align-items: center;
+ gap: 30px;
 }
 
 .strenghts__item {
   display: inline-block;
-  width: 270px;
-  height: 101px;
+
 }
 
 .strenghts__image {
@@ -24,7 +23,7 @@
   height: 120px;
   padding: 25px 100px;
   background-color: $background-white;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
 }
 
 .strenghts__icon {

@@ -190,17 +190,18 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 30px;
-  height: 251px;
 }
 
 .strenghts__item {
   display: inline-block;
-  width: 270px;
-  height: 101px;
 }
 
 .strenghts__image {
@@ -208,7 +209,7 @@ p {
   height: 120px;
   padding: 25px 100px;
   background-color: #f5f4fa;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
 }
 
 .strenghts__icon {
