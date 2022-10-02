@@ -1,6 +1,7 @@
 .header {
   border-bottom: 1px solid #ececec;
 
+
   & .header__container {
     @extend %container;
     height: 60px;
@@ -10,23 +11,33 @@
     align-items: center;
   }
 
+  &__contact-links {
+    display: none;
+}
+
 }
 
 .nav {
   display: none;
 }
 
-.header__contact-links {
-    display: none;
+.header__button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
 }
 
+.header__menu {
+  width: 24px;
+  height: 16px;
 
-
-
-
-
-
-
+  &:hover,
+  &:focus {
+    color: $blue;
+    fill: $blue;
+  }
+}
 
 // .header {
 //   border-bottom: 1px solid #ececec;

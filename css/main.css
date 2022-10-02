@@ -7,6 +7,8 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 ul {
@@ -23,8 +25,9 @@ p {
 }
 
 .footer__container, .grid, .subpage__container, .clients__container, .team__container, .speciality__container, .strenghts__container, .slider .slider__container, .header .header__container {
-  max-width: 100%;
-  display: inline-block;
+  min-width: 320px;
+  max-width: 1200px;
+  display: block;
   margin: 0 auto;
 }
 
@@ -44,13 +47,28 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
+.header__contact-links {
+  display: none;
+}
 
 .nav {
   display: none;
 }
 
-.header__contact-links {
-  display: none;
+.header__button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+}
+
+.header__menu {
+  width: 24px;
+  height: 16px;
+}
+.header__menu:hover, .header__menu:focus {
+  color: #2196f3;
+  fill: #2196f3;
 }
 
 .logo {
@@ -94,11 +112,14 @@ p {
 }
 .slider .slider__image {
   margin: 0 auto;
-  width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/image8.jpg);
-  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/main/image8.jpg);
+  max-width: 1600px;
+  padding: 118px 58px 57px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/./images/main/slider@1x.jpg);
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(/./images/main/slider@1x.jpg);
 }
 
 .slider .slider__container {
@@ -115,6 +136,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .slider__heading {
@@ -131,8 +153,9 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 44px;
-  line-height: 1.363;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
   color: #ffffff;
   margin-bottom: 30px;
 }
@@ -157,6 +180,10 @@ p {
   background-color: #1580d7;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.strenghts {
+  padding: 60px 0;
 }
 
 .strenghts__list {
@@ -203,7 +230,7 @@ p {
   line-height: 1.714;
 }
 
-.subpage, .clients, .team, .speciality, .strenghts {
+.subpage, .clients, .team, .speciality {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
