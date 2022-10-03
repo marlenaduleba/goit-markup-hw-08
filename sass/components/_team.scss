@@ -1,6 +1,6 @@
 .team {
   background-color: $background-white;
-  @extend %block-spacing;
+  @include block-spacing (60px 0);
 
   &__container {
     @include container (480px);
@@ -17,8 +17,7 @@ width: 100%;
 }
 
 .team__item {
-  width: 270px;
-  height: 428px;
+  width: 100%;
   display: block;
 }
 

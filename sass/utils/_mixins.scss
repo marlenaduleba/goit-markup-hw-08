@@ -5,6 +5,11 @@
     margin: 0 auto;
   }
 
+ @mixin block-spacing ($padding) {
+    display: flex;
+    margin: 0 auto;
+    padding: $padding;
+  }
 
 @mixin buttonImg ($width, $height) {
     width: $width;

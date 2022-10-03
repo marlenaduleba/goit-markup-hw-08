@@ -250,7 +250,7 @@ p {
   line-height: 1.714;
 }
 
-.subpage, .clients, .team {
+.subpage, .clients {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,6 +279,11 @@ p {
 
 .team {
   background-color: #f5f4fa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 60px 0;
 }
 .team__container {
   min-width: 320px;
@@ -301,8 +306,7 @@ p {
 }
 
 .team__item {
-  width: 270px;
-  height: 428px;
+  width: 100%;
   display: block;
 }
 
