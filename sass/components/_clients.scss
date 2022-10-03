@@ -1,21 +1,21 @@
 .clients {
-  @extend %block-spacing;
+  @include block-spacing (60px 0);
 
   &__container {
-    @extend %container;
+    @include container (768px);
+    padding: 0 15px;
   }
 
-  &--bottom-space {
-    padding-bottom: 126px;
+  & .title {
+    margin-bottom: 30px;
   }
-
 }
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
   gap: 30px;
 }
 
@@ -23,8 +23,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 92px;
+  flex-basis: calc((100% - 30px) / 2);
+  max-width: 100%;
+  min-height: 92px;
   border: 1px solid $icon-gray;
   border-radius: 4px;
   color: $icon-gray;

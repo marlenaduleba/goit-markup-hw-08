@@ -3,9 +3,9 @@
 
 
   & .header__container {
-    @extend %container;
-    height: 60px;
+    @include container (768px);
     padding: 0 15px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;

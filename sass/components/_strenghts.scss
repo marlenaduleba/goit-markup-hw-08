@@ -3,15 +3,15 @@
 }
 
 .strenghts__container {
-  @include container (480px);
+  @include container (768px);
   padding: 0 15px;
 }
 
 .strenghts__list {
   display: flex;
- flex-direction: column;
- align-items: center;
- gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
 .strenghts__item {

@@ -3,7 +3,7 @@
   @include block-spacing (60px 0);
 
   &__container {
-    @include container (480px);
+    @include container (768px);
     padding: 0 15px;
   }
 
@@ -11,8 +11,8 @@
 
 .team__list {
   display: flex;
-flex-direction: column;
-width: 100%;
+  flex-direction: column;
+  width: 100%;
   gap: 30px;
 }
 

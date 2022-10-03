@@ -3,7 +3,7 @@
 
   & .slider__image {
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 1600px;
     padding: 118px 58px 57px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,10 +15,18 @@
       url(/./images/main/slider@1x.jpg);
   }
 
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: url(/./images/main/slider@2x.jpg);
+  }
+}
+
 }
 
 .slider .slider__container {
-  @include container (480px);
+  @include container (768px);
   display: flex;
   flex-direction: column;
   justify-content: center;
