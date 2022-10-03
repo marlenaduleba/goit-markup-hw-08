@@ -3,7 +3,8 @@
 }
 
 .strenghts__container {
-  @extend %container;
+  @include container (480px);
+  padding: 0 15px;
 }
 
 .strenghts__list {
@@ -19,7 +20,9 @@
 }
 
 .strenghts__image {
-  width: 270px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   height: 120px;
   padding: 25px 100px;
   background-color: $background-white;
@@ -38,6 +41,7 @@
   line-height: 1.142;
   color: $black;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .strenghts__description {

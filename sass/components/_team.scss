@@ -3,14 +3,16 @@
   @extend %block-spacing;
 
   &__container {
-    @extend %container;
+    @include container (480px);
+    padding: 0 15px;
   }
 
 }
 
 .team__list {
   display: flex;
-  justify-content: space-between;
+flex-direction: column;
+width: 100%;
   gap: 30px;
 }
 

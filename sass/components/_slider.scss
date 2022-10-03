@@ -3,7 +3,7 @@
 
   & .slider__image {
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 100%;
     padding: 118px 58px 57px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,7 +18,7 @@
 }
 
 .slider .slider__container {
-  @extend %container;
+  @include container (480px);
   display: flex;
   flex-direction: column;
   justify-content: center;
