@@ -451,53 +451,51 @@
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal-box">
-        <button type="button" class="close-button" data-modal-close>
-          <svg class="close-button__icon">
-            <use href="./images/icons.svg#icon-x"></use>
-          </svg>
-        </button>
-        <p class="modal-box__title">Zostaw swoje dane w formularzu poniżej</p>
-        <form class="main-form">
-          <div class="inputs">
-            <label class="inputs__label inputs__text-style"
-              >Imię
-              <svg class="inputs__icon">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
-              <input class="inputs__field" type="text" name="name"
-            /></label>
 
-            <label class="inputs__label inputs__text-style"
-              >Telefon
-              <svg class="inputs__icon">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-              <input class="inputs__field" type="tel" name="phone-number"
-            /></label>
-
-            <label class="inputs__label inputs__text-style"
-              >Email<svg class="inputs__icon">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-              <input class="inputs__field" type="email" name="email"
-            /></label>
-
-            <label class="inputs__label inputs__text-style">Komentarz</label>
-            <textarea
-              class="inputs__field inputs__comment inputs__text-style"
-              name="inputs__comment"
-              placeholder="Wprowadź tekst"
-            ></textarea>
-          </div>
-
-          <div class="checkbox">
-            <label class="checkbox__label"
-              ><input
-                class="checkbox__input hidden"
-                type="checkbox"
-                name="terms-and-policy"
-              />
+        <div class="modal-box">
+          <button type="button" class="close-button" data-modal-close>
+            <svg class="close-button__icon">
+              <use href="./images/icons.svg#icon-x"></use>
+            </svg>
+          </button>
+         
+          <form class="main-form">
+            <div class="inputs">
+              <p class="modal-box__title">Zostaw swoje dane w formularzu poniżej</p>
+              <label class="inputs__label inputs__text-style"
+                >Imię
+                <svg class="inputs__icon">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+                <input class="inputs__field" type="text" name="name"
+              /></label>
+              <label class="inputs__label inputs__text-style"
+                >Telefon
+                <svg class="inputs__icon">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                <input class="inputs__field" type="tel" name="phone-number"
+              /></label>
+              <label class="inputs__label inputs__text-style"
+                >Email<svg class="inputs__icon">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+                <input class="inputs__field" type="email" name="email"
+              /></label>
+              <label class="inputs__label inputs__text-style">Komentarz</label>
+              <textarea
+                class="inputs__field inputs__comment inputs__text-style"
+                name="inputs__comment"
+                placeholder="Wprowadź tekst"
+              ></textarea>
+            </div>
+            <div class="checkbox">
+              <label class="checkbox__label"
+                ><input
+                  class="checkbox__input hidden"
+                  type="checkbox"
+                  name="terms-and-policy"
+                />
               <span class="checkbox__text"
                 >Oświadczam, iż akceptuję<a
                   class="checkbox__link checkbox__link--left"
@@ -505,9 +503,8 @@
                   >Regulamin</a
                 >i<a class="checkbox__link checkbox__link--right" href="#"
                   >Politykę Prywatności</a
-                >.</span
-              ></label
-            >
+                >.</span></label
+>
           </div>
           <div class="form-button">
             <button class="button" type="submit">Wyślij</button>
