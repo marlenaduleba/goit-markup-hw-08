@@ -1,8 +1,6 @@
-.subpage {
-    @extend %block-spacing;
 
-    &__container {
-        @extend %container;
+    
+    .subpage__container {
+        @include container (768px);
+    padding: 0 15px;
     }
-
-}

@@ -1,12 +1,10 @@
 .filters {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-
-  &__item:not(:last-child) {
-    display: block;
-    margin-right: 8px;
-  }
+  flex-wrap: wrap;
+  gap: 8px;
+  row-gap: 15px;
+  flex-basis: calc((100% - 16px) / 3);
+ padding: 60px 0 40px;
 
 }
 

@@ -25,13 +25,6 @@ p {
   padding: 0;
 }
 
-.grid, .subpage__container {
-  min-width: 320px;
-  max-width: 1200px;
-  display: block;
-  margin: 0 auto;
-}
-
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -121,7 +114,7 @@ p {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 83px 40px 48px;
+  padding: 48px 40px;
   background-color: #ffffff;
   z-index: 999;
   letter-spacing: 0.02em;
@@ -198,6 +191,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 357px;
 }
 
 .mobile-socials__link, .mobile-socials__link--no-border {
@@ -396,15 +390,6 @@ p {
 .strenghts__description {
   font-size: 14px;
   line-height: 1.714;
-}
-
-.subpage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .title {
@@ -631,18 +616,25 @@ p {
   height: 60.04px;
 }
 
+.subpage__container {
+  min-width: 320px;
+  max-width: 768px;
+  display: block;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .filters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
-}
-.filters__item:not(:last-child) {
-  display: block;
-  margin-right: 8px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+  row-gap: 15px;
+  -ms-flex-preferred-size: calc((100% - 16px) / 3);
+      flex-basis: calc((100% - 16px) / 3);
+  padding: 60px 0 40px;
 }
 
 .filters__button {
@@ -668,15 +660,28 @@ p {
           box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08), 0 3px 1px rgba(0, 0, 0, 0.1);
 }
 
+.grid {
+  padding-bottom: 60px;
+}
+.grid__container {
+  min-width: 320px;
+  max-width: 768px;
+  display: block;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .grid__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 30px;
 }
 .grid__list .grid__figcaption {

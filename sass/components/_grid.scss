@@ -1,11 +1,16 @@
 .grid {
-  @extend %container;
+  padding-bottom: 60px;
+
+  &__container {
+    @include container (768px);
+    padding: 0 15px;
+  }
 }
 
 .grid__list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
 
   .grid__figcaption {
