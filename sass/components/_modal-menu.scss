@@ -19,7 +19,7 @@
 
   .mobile-menu__link:hover,
   .mobile-menu__link:focus {
-    text-decoration: underline;
+    color: $blue;
   }
   
   .menu-toggle {
@@ -56,12 +56,7 @@
       display: none;
     }
   }
-  
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  
+    
   .menu-container {
     position: fixed;
     display: flex;
