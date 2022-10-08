@@ -18,7 +18,7 @@
 
 .team__item {
   width: 100%;
-  display: block;
+  display: flex;
 }
 
 .team__figure {
@@ -49,24 +49,15 @@
 
 // TABLET STYLE
 
-// @media (min-width: 768px){
+@media (min-width: 768px){
 
-//   .strenghts {
-//     padding: 60px 0 45px;
-//   }
+ .team__list{
+flex-direction: row;
+flex-wrap: wrap;
+ }
+.team__item{
 
-// &__list{
-//  flex-direction: row;
-//  flex-wrap: wrap;
- 
-// }
+flex-basis: calc((100% - 30px) / 2);
+}
 
-// &__item{
-//   flex-wrap: wrap;
-//    flex-basis: calc((100% - 30px) / 2);
-// }
-
-// &__title{
-//   text-align: start;
-// }
-//   }
+  }

@@ -58,18 +58,17 @@
     padding: 60px 0 45px;
   }
 
-&__list{
+  .strenghts__list{
  flex-direction: row;
  flex-wrap: wrap;
  
 }
 
-&__item{
-  flex-wrap: wrap;
+.strenghts__item{
    flex-basis: calc((100% - 30px) / 2);
 }
 
-&__title{
+.strenghts__title{
   text-align: start;
 }
   }
