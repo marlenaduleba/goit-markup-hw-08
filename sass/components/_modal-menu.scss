@@ -20,6 +20,7 @@
   .mobile-menu__link:hover,
   .mobile-menu__link:focus {
     color: $blue;
+    background-color: transparent;
   }
   
   .menu-toggle {
@@ -27,6 +28,12 @@
     height: 40px;
     border: none;
     background-color: transparent;
+
+    &:hover,
+    &:focus{
+
+      background-color: transparent;
+    }
   }
   
   .menu-toggle__icon {
