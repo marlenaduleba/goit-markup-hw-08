@@ -58,3 +58,22 @@
  }
  
    }
+
+   // DESKTOP STYLE
+
+@media (min-width: 1200px){
+  .clients {
+    @include block-spacing (94px 0);
+  }
+  
+.clients__icon{
+
+  width: 100%;
+}
+
+    .clients__item{
+
+      flex-basis: calc((100% - 150px) / 6);
+      }
+
+  }
