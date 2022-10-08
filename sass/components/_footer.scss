@@ -15,6 +15,14 @@
 
 }
 
+.footer__alignment{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+
+}
+
 .footer__address {
   font-size: 14px;
   line-height: 1.714;
@@ -45,8 +53,6 @@
 
 .footer__socials {
   width: 206px;
-  height: 80px;
-  padding-top: 12px;
 }
 
 .footer__title {
@@ -61,7 +67,6 @@
 
 .footer__newsletter {
   width: 100%;
-  padding-top: 12px;
 }
 
 .footer-form__row {
@@ -123,3 +128,45 @@
   
   }
 
+ // DESKTOP STYLE
+
+ @media (min-width: 1200px){
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__alignment {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: start;
+  }
+
+ .footer__socials {
+    padding-top: 12px;
+  }
+
+.footer__newsletter {
+text-align: start;
+align-self: flex-start;
+padding-top: 12px;
+}
+
+  .footer-form__row {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+
+    &.button {
+
+      width: 200px;
+    }
+  }
+
+.footer-form__input {
+
+  max-width: 358px;
+}
+
+  }

@@ -1073,6 +1073,20 @@ p {
   text-align: center;
 }
 
+.footer__alignment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .footer__address {
   font-size: 14px;
   line-height: 1.714;
@@ -1106,8 +1120,6 @@ p {
 
 .footer__socials {
   width: 206px;
-  height: 80px;
-  padding-top: 12px;
 }
 
 .footer__title {
@@ -1122,7 +1134,6 @@ p {
 
 .footer__newsletter {
   width: 100%;
-  padding-top: 12px;
 }
 
 .footer-form__row {
@@ -1210,6 +1221,55 @@ p {
   }
   .footer-form__input {
     max-width: 450px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__alignment {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: start;
+  }
+  .footer__socials {
+    padding-top: 12px;
+  }
+  .footer__newsletter {
+    text-align: start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding-top: 12px;
+  }
+  .footer-form__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 12px;
+  }
+  .footer-form__row.button {
+    width: 200px;
+  }
+  .footer-form__input {
+    max-width: 358px;
   }
 }
 .is-hidden {
