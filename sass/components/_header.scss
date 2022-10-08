@@ -3,7 +3,7 @@
 
 
   & .header__container {
-    @include container (768px);
+    @include container (1200px);
     padding: 0 15px;
     height: 60px;
     display: flex;
@@ -11,17 +11,8 @@
     align-items: center;
   }
 
-  &__contact-links {
-    display: none;
 }
 
-}
-
-@media (max-width: 767px) {
-    .nav {
-      display: none;
-    }
-  }
 
 // .nav {
 //   display: none;
