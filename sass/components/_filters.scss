@@ -1,6 +1,7 @@
 .filters {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 8px;
   row-gap: 15px;
   flex-basis: calc((100% - 16px) / 3);
@@ -33,3 +34,14 @@
   }
 
 }
+
+// TABLET STYLE
+
+@media (min-width: 768px){
+
+  .filters{
+  
+    padding: 60px 0 30px;
+  }
+  
+    }

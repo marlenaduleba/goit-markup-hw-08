@@ -4,7 +4,7 @@
   color: $white;
 
   &__container {
-    @include container (768px);
+    @include container (1200px);
     padding: 0 15px;
     display: flex;
     flex-direction: column;
@@ -105,3 +105,21 @@
   @include buttonImg (24px, 24px);
   fill: $white;
 }
+
+// TABLET STYLE
+
+@media (min-width: 768px){
+
+  .footer__alignment{
+    width: 100%;
+    display: flex;
+   justify-content: space-around;
+  }
+
+.footer-form__input {
+  max-width: 450px;
+
+  }
+  
+  }
+
