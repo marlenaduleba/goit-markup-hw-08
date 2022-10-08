@@ -61,3 +61,19 @@ flex-basis: calc((100% - 30px) / 2);
 }
 
   }
+
+// DESKTOP STYLE
+
+@media (min-width: 1200px){
+  .team {
+   padding: 94px 0;
+  
+    }
+  
+    .team__item{
+
+      flex-basis: calc((100% - 90px) / 4);
+      }
+
+  }
+

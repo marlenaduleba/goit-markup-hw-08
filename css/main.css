@@ -25,6 +25,13 @@ p {
   padding: 0;
 }
 
+.speciality__container {
+  min-width: 320px;
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -563,6 +570,24 @@ p {
     text-align: start;
   }
 }
+@media (min-width: 1200px) {
+  .strenghts {
+    padding: 94px 0;
+  }
+  .strenghts__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
+}
+.speciality {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -577,10 +602,55 @@ p {
   margin-bottom: 50px;
 }
 
-.speciality {
-  display: none;
+.speciality--no-top-space {
+  padding-top: 0;
 }
 
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+
+.gallery__thumb {
+  position: relative;
+}
+
+.gallery__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.172;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  z-index: 1;
+}
+.gallery__thumb > .gallery__title {
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 1199px) {
+  .speciality {
+    display: none;
+  }
+}
 .team {
   background-color: #f5f4fa;
   display: -webkit-box;
@@ -654,6 +724,15 @@ p {
   .team__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .team {
+    padding: 94px 0;
+  }
+  .team__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
   }
 }
 .figure {

@@ -72,3 +72,19 @@
   text-align: start;
 }
   }
+
+// DESKTOP STYLE
+
+@media (min-width: 1200px){
+
+   .strenghts {
+    padding: 94px 0;
+  }
+
+  .strenghts__item{
+    flex-basis: calc((100% - 90px) / 4);
+ }
+ 
+
+}
+
