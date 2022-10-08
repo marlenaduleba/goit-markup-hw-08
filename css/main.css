@@ -30,7 +30,7 @@ p {
 }
 .header .header__container {
   min-width: 320px;
-  max-width: 768px;
+  max-width: 1200px;
   display: block;
   margin: 0 auto;
   padding: 0 15px;
@@ -45,14 +45,135 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
-.header__contact-links {
-  display: none;
-}
 
 .nav {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
+.nav__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  color: #212121;
+  text-decoration: none;
+  display: block;
+  margin-right: 46px;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+.nav__link:hover, .nav__link:focus {
+  color: #2196f3;
+  fill: #2196f3;
+}
+
+.nav__link--active {
+  color: #2196f3;
+  position: relative;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav__link--active::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -32px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  color: #757575;
+  text-decoration: none;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__link:hover, .header__link:focus {
+  color: #2196f3;
+  fill: #2196f3;
+}
+
+.header__icon--left {
+  margin-right: 10px;
+  color: #757575;
+  fill: #757575;
+}
+.header__icon--left .header__icon {
+  width: 16px;
+  height: 12px;
+}
+.header__link > .header__icon--left {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header__icon--right {
+  margin-right: 10px;
+  color: #757575;
+  fill: #757575;
+}
+.header__icon--right .header__icon {
+  width: 10px;
+  height: 16px;
+}
+.header__link > .header__icon--right {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header__link:hover .header__icon,
+.header__link:focus .header__icon {
+  color: #2196f3;
+  fill: #2196f3;
+}
+
+.header__contact-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  color: #2196f3;
+}
+
+@media (max-width: 767px) {
+  .nav,
+.header__contact-links {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .header .header__container {
+    height: 80px;
+  }
+}
 .mobile-menu__link {
   color: inherit;
   text-decoration: none;
@@ -60,13 +181,17 @@ p {
 
 .mobile-menu__link:hover,
 .mobile-menu__link:focus {
-  text-decoration: underline;
+  color: #2196f3;
+  background-color: transparent;
 }
 
 .menu-toggle {
   width: 40px;
   height: 40px;
   border: none;
+  background-color: transparent;
+}
+.menu-toggle:hover, .menu-toggle:focus {
   background-color: transparent;
 }
 
@@ -93,11 +218,6 @@ p {
     display: none;
   }
 }
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 .menu-container {
   position: fixed;
   display: -webkit-box;
@@ -255,12 +375,12 @@ p {
   background-size: cover;
   background-position: center;
   width: 100%;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/./images/main/slider-mobile@1x.jpg);
-  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(/./images/main/slider-mobile@1x.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/main/slider@1x.jpg);
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(/images/main/slider@1x.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .slider .box {
-    background-image: url(/./images/main/slider-mobile@2x.jpg);
+    background-image: url(/images/main/slider@2x.jpg);
   }
 }
 
@@ -334,7 +454,7 @@ p {
 
 .strenghts__container {
   min-width: 320px;
-  max-width: 768px;
+  max-width: 1200px;
   display: block;
   margin: 0 auto;
   padding: 0 15px;
@@ -355,7 +475,13 @@ p {
 }
 
 .strenghts__item {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .strenghts__image {
@@ -369,7 +495,7 @@ p {
   height: 120px;
   padding: 25px 100px;
   background-color: #f5f4fa;
-  margin: 0 auto 30px;
+  margin-bottom: 30px;
 }
 
 .strenghts__icon {
@@ -392,6 +518,28 @@ p {
   line-height: 1.714;
 }
 
+@media (min-width: 768px) {
+  .strenghts {
+    padding: 60px 0 45px;
+  }
+  .strenghts__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .strenghts__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+  .strenghts__title {
+    text-align: start;
+  }
+}
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -420,7 +568,7 @@ p {
 }
 .team__container {
   min-width: 320px;
-  max-width: 768px;
+  max-width: 1200px;
   display: block;
   margin: 0 auto;
   padding: 0 15px;
@@ -559,7 +707,7 @@ p {
 }
 .clients__container {
   min-width: 320px;
-  max-width: 768px;
+  max-width: 1200px;
   display: block;
   margin: 0 auto;
   padding: 0 15px;
@@ -684,13 +832,15 @@ p {
           align-items: center;
   gap: 30px;
 }
-.grid__list .grid__figcaption {
+
+.grid__figcaption {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
-.grid__list .grid__image {
+
+.grid__image {
   position: relative;
   overflow: hidden;
 }

@@ -3,7 +3,7 @@
   @include block-spacing (60px 0);
 
   &__container {
-    @include container (768px);
+    @include container (1200px);
     padding: 0 15px;
   }
 
@@ -46,3 +46,27 @@
   line-height: 1.187;
   margin-bottom: 16px;
 }
+
+// TABLET STYLE
+
+// @media (min-width: 768px){
+
+//   .strenghts {
+//     padding: 60px 0 45px;
+//   }
+
+// &__list{
+//  flex-direction: row;
+//  flex-wrap: wrap;
+ 
+// }
+
+// &__item{
+//   flex-wrap: wrap;
+//    flex-basis: calc((100% - 30px) / 2);
+// }
+
+// &__title{
+//   text-align: start;
+// }
+//   }

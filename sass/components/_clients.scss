@@ -2,7 +2,7 @@
   @include block-spacing (60px 0);
 
   &__container {
-    @include container (768px);
+    @include container (1200px);
     padding: 0 15px;
   }
 

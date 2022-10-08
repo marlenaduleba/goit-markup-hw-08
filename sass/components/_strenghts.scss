@@ -3,7 +3,7 @@
 }
 
 .strenghts__container {
-  @include container (768px);
+  @include container (1200px);
   padding: 0 15px;
 }
 
@@ -15,7 +15,8 @@
 }
 
 .strenghts__item {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 
 }
 
@@ -26,7 +27,7 @@
   height: 120px;
   padding: 25px 100px;
   background-color: $background-white;
-  margin: 0 auto 30px;
+  margin-bottom: 30px;
 }
 
 .strenghts__icon {
@@ -49,51 +50,26 @@
   line-height: 1.714;
 }
 
+// TABLET STYLE
 
-// .strenghts {
-//   @extend %block-spacing;
-// }
+@media (min-width: 768px){
 
-// .strenghts__container {
-//   @extend %container;
-// }
+  .strenghts {
+    padding: 60px 0 45px;
+  }
 
-// .strenghts__list {
-//   display: flex;
-//   justify-content: space-between;
-//   gap: 30px;
-//   height: 251px;
-// }
+&__list{
+ flex-direction: row;
+ flex-wrap: wrap;
+ 
+}
 
-// .strenghts__item {
-//   display: inline-block;
-//   width: 270px;
-//   height: 101px;
-// }
+&__item{
+  flex-wrap: wrap;
+   flex-basis: calc((100% - 30px) / 2);
+}
 
-// .strenghts__image {
-//   width: 270px;
-//   height: 120px;
-//   padding: 25px 100px;
-//   background-color: $background-white;
-//   margin-bottom: 30px;
-// }
-
-// .strenghts__icon {
-//   width: 70px;
-//   height: 70px;
-// }
-
-// .strenghts__title {
-//   font-family: $font-primary;
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: 1.142;
-//   color: $black;
-//   margin-bottom: 10px;
-// }
-
-// .strenghts__description {
-//   font-size: 14px;
-//   line-height: 1.714;
-// }
+&__title{
+  text-align: start;
+}
+  }
