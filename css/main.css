@@ -778,6 +778,12 @@ p {
   height: 60.04px;
 }
 
+@media (min-width: 768px) {
+  .clients__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+}
 .subpage__container {
   min-width: 320px;
   max-width: 768px;
