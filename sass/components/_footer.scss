@@ -138,9 +138,10 @@
 
   .footer__alignment {
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: flex-start;
     text-align: start;
+
   }
 
  .footer__socials {
@@ -151,22 +152,19 @@
 text-align: start;
 align-self: flex-start;
 padding-top: 12px;
+
 }
 
   .footer-form__row {
     display: flex;
     flex-direction: row;
     gap: 12px;
-
-    &.button {
-
-      width: 200px;
-    }
   }
+
 
 .footer-form__input {
 
-  max-width: 358px;
+  width: 358px;
 }
 
   }
