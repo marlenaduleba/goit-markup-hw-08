@@ -1031,6 +1031,8 @@ img {
   margin: 0;
   font-size: 18px;
   line-height: 28px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .grid__project-name {
@@ -1118,8 +1120,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
