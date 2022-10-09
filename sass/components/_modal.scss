@@ -41,6 +41,13 @@
     0 1px 3px rgba(0, 0, 0, 0.12);
 }
 
+@media (min-width: 300px) and (max-width: 450px){
+
+  .modal-box {
+    width: 95vw;
+  }
+}
+
 .inputs__text-style {
   font-size: 12px;
   line-height: 1.172;
@@ -171,6 +178,7 @@
 
 .checkbox__text {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
@@ -215,3 +223,13 @@
   -webkit-appearance: none;
   appearance: none;
 }
+
+// DESKTOP STYLE
+
+@media (min-width: 1200px){
+  .modal-box {
+    width: 528px;
+  }
+      
+
+  }
