@@ -965,6 +965,10 @@ p {
     padding: 94px 0 50px;
   }
 }
+img {
+  min-height: 294px;
+}
+
 .grid {
   padding-bottom: 60px;
 }
