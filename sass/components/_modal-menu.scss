@@ -61,7 +61,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 48px 40px;
+    padding: 48px 40px 60px;
     background-color: $white;
     z-index: 999;
     letter-spacing: 0.02em;
@@ -127,8 +127,8 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
-  max-width: 357px;
+  justify-content: flex-start;
+  
 
 }
 
@@ -139,12 +139,18 @@
   color: $blue;
   text-decoration: none;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-  padding-right: 10px;
+  padding: 0 10px;
+
+&--no-padding{
+    @extend .mobile-socials__link;
+    padding-left: 0;
+  }
+
 
   &--no-border{
     @extend .mobile-socials__link;
     border: none;
-    padding: 0;
+    
   }
 
 }

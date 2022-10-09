@@ -254,7 +254,7 @@ p {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 40px;
+  padding: 48px 40px 60px;
   background-color: #ffffff;
   z-index: 999;
   letter-spacing: 0.02em;
@@ -330,24 +330,25 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-width: 357px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-.mobile-socials__link, .mobile-socials__link--no-border {
+.mobile-socials__link, .mobile-socials__link--no-border, .mobile-socials__link--no-padding {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.222;
   color: #2196f3;
   text-decoration: none;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-  padding-right: 10px;
+  padding: 0 10px;
+}
+.mobile-socials__link--no-padding {
+  padding-left: 0;
 }
 .mobile-socials__link--no-border {
   border: none;
-  padding: 0;
 }
 
 .logo {
