@@ -93,17 +93,12 @@
    padding-bottom: 94px;
   
     }
-    .grid__image{
-      height: 294px;
+    .grid__figcaption{
+      max-height: 110px;
      
     }
     
-.grid__figcaption{
-  padding: 20px 24px;
-}
-
     .grid__item{
-  
             flex-basis: calc((100% - 60px) / 3);
             }
       

@@ -1058,11 +1058,8 @@ p {
   .grid {
     padding-bottom: 94px;
   }
-  .grid__image {
-    height: 294px;
-  }
   .grid__figcaption {
-    padding: 20px 24px;
+    max-height: 110px;
   }
   .grid__item {
     -ms-flex-preferred-size: calc((100% - 60px) / 3);
