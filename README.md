@@ -2,7 +2,7 @@
 
 ![screenshot](https://github.com/marlenaduleba/goit-markup-hw-08/blob/main/WebStudio.png)
 
-This is my first individual project as part of the Fullstack Developer course at GoIT. I've used Sass and BEM methodology to create a responsive layout for the "WebStudio" homepage. The project is two-page and meets Mobile-First criteria, includes a mobile menu script, and is configured with GitHub Pages.
+This is my first individual project as part of the Fullstack Developer course at GoIT. I've used Sass and BEM methodology to create a responsive layout for the WebStudio homepage. The project is two-page and meets Mobile-First criteria, includes a mobile menu script, and is configured with GitHub Pages.
 
 **Technologies**
 
